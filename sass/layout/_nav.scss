@@ -1,0 +1,69 @@
+
+
+.nav-comp {
+    grid-column: span 2;
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 10%;
+        margin-left: 10%;
+        list-style-type: none;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        li {
+            padding: 0 10px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            &:visited {
+                color: white;
+    
+            }
+            &:hover {
+
+                text-decoration: underline;
+            }
+        }
+
+        
+    }
+    @media (max-width:500px) {
+        display:none;
+        .nav-list{
+            padding-bottom:10px;
+           
+           
+            
+        }
+        
+          .active {
+            font-size:16px;
+        
+        }
+       
+            
+        
+    }
+}
+
+
+.nav-mobile {
+    display: none;
+    @media (max-width:500px) {
+        
+            display:block;
+          
+            li{
+            
+                font-size:15px;
+               
+                
+            }
+           
+        
+    }
+}

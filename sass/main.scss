@@ -1,0 +1,40 @@
+@import './utils/variables';
+ @import './layout/photo.scss';
+ @import "./layout/contact.scss";
+@import './layout/body-accueil';
+@import './layout/body-menu';
+@import './layout/body-boisson';
+@import './layout/header';
+@import './layout/nav';
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(223, 92, 16), rgb(65, 65, 233));
+   
+}
+h1,h2,h3,h4{
+    font-weight: bold;
+    
+}
+
+.boisson,
+.menu
+ {
+    border: 10px solid  $primaryColor;
+    border-radius: 20px;
+    padding: 10px 35px;
+    margin: 20px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+

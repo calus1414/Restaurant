@@ -1,0 +1,38 @@
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    p {
+
+        font-style: italic;
+    
+    }
+    @media (max-width:800px) {
+        
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    }
+    @media (max-width:500px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+
+.main-menu-right {
+    grid-column: span 1;
+    
+
+}
+
+.main-menu-left {
+
+    grid-column: span 1;
+    display:grid;
+    grid-template-columns: auto;
+   
+
+
+}
