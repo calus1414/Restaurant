@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./sass/style/style.css">
     <title>Document</title>
 </head>
 
@@ -115,26 +115,17 @@
         <aside>
             <h3>Commentaires</h3>
             <div class='aside-wrapper'>
-                <h4>Thomas *****</h4>
-                <p class='comment'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est tempore
-                    dignissimos placeat esse, quae, officia accusamus dicta aliquid earum nesciunt a. Ut
-                    assumenda impedit debitis. Earum eaque ut porro.Recusandae perferendis impedit eveniet eos
-                    perspiciatis, tempore quia distinctio sed sit blanditiis officia architecto? Ullam ad
-                    numquam sed ducimus facilis, reiciendis autem,
+               <div id="comments">
 
-                </p>
-                <h4>Gourmet78 ***</h4>
-                <p class='comment'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est tempore
-                    dignissimos placeat esse, quae, officia accusamus
-
-                </p>
-                <h4>Goupix95 ****</h4>
-                <p class='comment'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nulla omnis
-                    sit ab voluptatem, et reiciendis recusandae voluptatum animi dolorum libero sunt accusantium
-                    qui ad molestias quam explicabo distinctio quisquam!
-
-                </p>
-                <input type="text" placeholder="écriver un commentaire">
+               </div>
+               <div>
+                <input id="user-name" type="text" placeholder="Votre Nom">
+                <p id='error-name'>Vous devez entrer un Nom</p>
+                <textarea id='user-message'name="message" id="" cols="25" rows="10" placeholder="votre commentaire"></textarea>
+                <p id='error-message'>Vous devez entrer un Message</p>
+                <input id='btn'type="button" value='confirmer'>
+               </div>
+               
 
             </div>
 
@@ -162,7 +153,7 @@
 
 
 
-
+<script src="./app.js"></script>
 </body>
 
 </html>

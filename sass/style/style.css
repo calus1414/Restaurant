@@ -214,6 +214,34 @@ aside {
   }
 }
 
+#error-name, #error-message {
+  font-style: italic;
+  font-size: 14px;
+  color: red;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  display: none;
+}
+
+#user-name, #user-message {
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0 0 0;
+}
+
+#btn {
+  padding: 5px;
+  border: 3px solid #4141e9;
+  color: #4141e9;
+  border-radius: 10px;
+}
+#btn:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: #4141e9;
+}
+
 .menu-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -318,32 +346,32 @@ header h3 {
   }
 }
 
-.nav-comp {
-  grid-column: span 2;
-}
-.nav-comp .nav-list {
+.nav-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 10%;
-  margin-left: 10%;
+  justify-content: left;
+  width: 100%;
   list-style-type: none;
   color: white;
   font-weight: bold;
   font-size: 22px;
 }
-.nav-comp .nav-list li {
+.nav-list li {
   padding: 0 10px;
 }
-.nav-comp .nav-list a {
+.nav-list a {
   color: white;
   text-decoration: none;
 }
-.nav-comp .nav-list a:visited {
+.nav-list a:visited {
   color: white;
 }
-.nav-comp .nav-list a:hover {
+.nav-list a:hover {
   text-decoration: underline;
+}
+
+.nav-comp {
+  grid-column: span 2;
 }
 @media (max-width: 500px) {
   .nav-comp {
@@ -375,6 +403,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(#df5c10, #4141e9);
+  word-break: break-all;
 }
 
 h1, h2, h3, h4 {
